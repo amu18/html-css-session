@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* input:checked{
+            height: 20px;
+            width: 20px;
+            }
+            input:disabled {
+                background: teal;
+                color: white;
+            }
+            input:enabled {
+                background: blue;
+                color: white;
+            }
+
+            input:focus{
+                background: green;
+            } */
+        </style>
+</head>
+
+<body>
+
+    <h2>Forms Example</h2>
+    <p>This form captures user details and their preference for cars</p>
+
+    <form action="https://reqres.in/api/users" target="_blank" method="post">
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey" required disabled> 
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse" readonly><br><br>
+        Password:<br>
+        <input type="password" name="password" minlength="5" required><br><br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male"><br>
+        Female
+        <input type="radio" name="gender" value="female" checked><br>
+        Fav Car Brand:<br>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab" selected>Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+        Why?:<br>
+        <textarea name="message" placeholder="Type the reson for your preference" rows="10" cols="30" maxlength="40"
+            autofocus></textarea><br>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+        Select images: <input type="file" name="img" multiple><br>
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        <br><br>
+        <input type="submit" value="Submit Data">
+        <input type="reset">
+    </form>
+
+</body>
+
+</html>

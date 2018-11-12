@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Table Example</title>
+</head>
+<style>
+    /* table,
+    td,
+    th {
+        border: 1px solid rgb(114, 111, 111);
+        border-collapse: collapse;
+    }
+
+    thead,
+    tfoot {
+        background-color: rgb(114, 111, 111);
+        color: #fff;
+    } */
+</style>
+
+<body>
+
+    <h2>Simple table with header</h2>
+
+    <table>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+        <tr>
+            <td>Danish</td>
+            <td>Aziz</td>
+        </tr>
+        <tr>
+            <td>Danish</td>
+            <td>Aziz</td>
+        </tr>
+        <tr>
+            <td>Amrita</td>
+            <td>Kumari</td>
+        </tr>
+    </table>
+
+    <h2>Table with thead, tfoot, and tbody</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Header content 1</th>
+                <th>Header content 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Body content 1</td>
+                <td>Body content 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer content 1</td>
+                <td>Footer content 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Table with colspan</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th colspan="3">Phone Num</th>
+        </tr>
+        <tr>
+            <td>Amrita</td>
+            <td>123456789</td>
+            <td>987654321</td>
+            <td>987654321</td>
+        </tr>
+    </table>
+
+    <h2>Table with rowspan</h2>
+
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Danish</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone Num</th>
+            <td>123456789</td>
+        </tr>
+        <tr>
+            <td>987654321</td>
+        </tr>
+    </table>
+
+    <h2>Table with colgroup and col</h2>
+
+    <!-- colgroup tag specifies a group of one or more columns in a table for formatting -->
+    <table>
+        <colgroup>
+            <col style="background-color: #0f0">
+            <col span="2">
+        </colgroup>
+        <tr>
+            <th>Lime</th>
+            <th>Lemon</th>
+            <th>Orange</th>
+        </tr>
+        <tr>
+            <td>Green</td>
+            <td>Yellow</td>
+            <td>Orange</td>
+        </tr>
+        <tr>
+            <td>Green</td>
+            <td>Yellow</td>
+            <td>Orange</td>
+        </tr>
+    </table>
+
+    <h2>Simple table with caption</h2>
+    <table>
+        <caption><strong>It describes the table purpose</strong></caption>
+        <!-- <div>
+            <strong>Div after caption</strong>
+        </div> -->
+        <tr>
+            <td>table data</td>
+            <td>table data</td>
+            <td>table data
+                <div>
+                    <strong>div inside the td</strong>
+                </div>
+            </td>
+            <!-- <div>
+                <strong>Independent Div Inside table</strong>
+            </div> -->
+            <td>table data</td>
+        </tr>
+        <tr>
+            <td>table data</td>
+            <td>table data</td>
+            <td>table data</td>
+            <td>table data</td>
+        </tr>
+    </table>
+</body>
+
+</html>
