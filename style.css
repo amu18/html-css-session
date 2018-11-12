@@ -1,0 +1,57 @@
+p {
+  font-size: 100%;
+  background-color: gray;
+  color: white;
+}
+
+
+  .className{
+    background-color: blue;
+  }
+  #idName{
+    background-color:green;
+  }
+
+  span, .className{
+    background-color: red;
+  }
+
+  .marginClass{ 
+    /* margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px; */
+    margin: 100px 10px 5px 80px; 
+  }
+
+  .paddingClass{
+     padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px; 
+    /* padding:  7px 3px 5px 8px; */
+  }
+  .borderClass{
+    border-style: dotted ;
+    border-width: 2px 10px 4px 20px;
+    border-color: red;
+    /* border: 5px dotted red; */
+  }
+
+  .fontCss{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .textCss{
+    color: blue;
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    text-indent: 50px;
+    line-height: 0.8;
+    word-spacing: 10px;
+    height: 200px;
+  }
+ 
