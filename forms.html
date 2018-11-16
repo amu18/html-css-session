@@ -30,13 +30,13 @@
 
     <form action="https://reqres.in/api/users" target="_blank" method="post">
         First name:<br>
-        <input type="text" name="firstname" value="Mickey" required disabled> 
+        <input type="text" name="firstname"  required disabled> 
         <br>
         Last name:<br>
         <input type="text" name="lastname" value="Mouse" readonly><br><br>
         Password:<br>
         <input type="password" name="password" minlength="5" required><br><br>
-        <label for="male">Male</label>
+        <label for="male">Male</label>*
         <input type="radio" name="gender" id="male" value="male"><br>
         Female
         <input type="radio" name="gender" value="female" checked><br>
@@ -50,9 +50,9 @@
         Why?:<br>
         <textarea name="message" placeholder="Type the reson for your preference" rows="10" cols="30" maxlength="40"
             autofocus></textarea><br>
-        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle1" value="Bike" checked> I have a bike<br>
         <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
-        Select images: <input type="file" name="img" multiple><br>
+        Select images: <input type="file" name="img" multiple accept=".xlsx,.xls"><br>
         <button type="button" onclick="alert('Hello World!')">Click Me!</button>
         <br><br>
         <input type="submit" value="Submit Data">
