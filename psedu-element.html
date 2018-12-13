@@ -4,26 +4,40 @@
 <head>
     <meta charset="utf-8">
     <title>Pseudo CSS</title>
-    <link rel="stylesheet" href="external.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         p {
-            width: 50%;
+            /* width: 50%; */
         }
 
-        /* p::before {
-            content: url(warning.png);
-        } */
+        p:before {
+            content: '';
+            background-image: url(warning.png);
+            height: 25px;
+            width: 30px;
+            display: inline-block;
+            background-repeat: no-repeat;
+        }
+        p:after {
+            content: '';
+            background-image: url(warning.png);
+            height: 25px;
+            width: 30px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            margin-right: 5px;
+        }
 
-        /* p::first-line {
+        p:first-line {
             font-weight: bold;
         }
 
-        p::first-letter {
-            font-size: 3em;
+        p:first-letter {
+            font-size: 2em;
             border: 1px solid black;
             background: red;
-            display: block;
-            float: left;
+            display: inline-block;
+            /* float: left; */
             padding: 2px;
             margin-right: 4px;
         }
@@ -31,13 +45,16 @@
         ::selection {
             color: red;
             background: yellow;
-        } */
+        }
     </style>
 </head>
 
 <body>
-    <p>This is my very paragraph.This is my very paragraph.This is my very paragraph.This is my very paragraph.
-        This is my very paragraph.This is my very paragraph.This is my very paragraph.</p>
+    <div>
+        <p>This is my very paragraph.This is my very paragraph.This is my very paragraph.This is my very paragraph.
+            This is my very paragraph.This is my very paragraph.This is my very paragraph.</p>
+    </div>
+
 </body>
 
 </html>

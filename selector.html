@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Selector CSS</title>
+
+    <style>
+        * {
+            padding: 2px;
+        }
+
+        div+p {
+            color: white;
+        }
+
+        div~p {
+            background: red
+        }
+
+        
+        div>p {
+            background: green;
+        }
+
+        ul>li:nth-child(2){
+            color: green
+        }
+
+        li {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        h2~ul {
+            background: lightblue
+        }
+
+        input[type=text]:focus{
+            width: 500px;
+            background: rgb(168, 205, 248);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    Search: <input type="text" name="search">
+    <div>
+        <p>
+            Div first child
+        </p>
+        <p>
+            Div second child
+        </p>
+    </div>
+    <p>
+        1st p tag Preceding by div.
+    </p>
+    <p>
+        2nd p tag Preceding by div.
+    </p>
+    <ul>
+        <li>
+            All child will be green
+            <a href="#">Item 1</a>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>
+            <span>Item 5</span>
+        </li>
+    </ul>
+
+    <h3>First list</h3>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <h2>The second list.</h2>
+    <div>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+    </div>
+
+    <h2>Another list</h2>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+</body>
+
+</html>

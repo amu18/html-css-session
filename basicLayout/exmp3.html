@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            position: relative;
+            width:100%;
+            margin: 0 auto;
+            z-index: 0;
+            color: white;
+        }
+
+        section:after {
+            content: 'Click on a tab above!';
+            position: absolute;
+            left: 0;
+            top: 48px;
+            width: 100%;
+            font-size: 1.8em;
+            text-align: center;
+            background-color: #5E6B7F;
+            padding: 40px 0;
+        }
+
+        button {
+            cursor: pointer;
+            width: 250px;
+            display: inline-block;
+            background-color: #5E6B7F;
+            color: white;
+            text-align: center;
+            transition: .25s ease;
+            border: none;
+            padding: 15px;
+            border-radius: 7px 7px 0 0;
+        }
+
+        div:focus button,
+        button:focus {
+            background-color: #8DA1BF;
+            outline: none;
+        }
+
+        button:focus+p,
+        div:focus P {
+            display: block;
+            position: absolute;
+            background-color: #8DA1BF;
+            height: 120px;
+            width: 100%;
+            left: 0;
+            z-index: 2;
+            outline: none;
+            top: 0px;
+            text-align: center;
+            padding-top: 48px;
+        }
+
+        p {
+            display: none;
+            font-size: 2em;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        div:focus {
+            outline: none;
+        }
+
+        .p {
+            margin-top: 300px;
+            text-align: center;
+            display: block;
+            font-size: 1em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div tabindex="0">
+            <button>Tab 1</button>
+            <p>Tab Content #1</p>
+        </div>
+        <div tabindex="0">
+            <button>Tab 2</button>
+            <p>Content for Tab #2</p>
+        </div>
+        <div tabindex="0">
+            <button>Tab 3</button>
+            <p>#3 Tab Content</p>
+        </div>
+    </section>
+</body>
+
+</html>
