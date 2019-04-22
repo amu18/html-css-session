@@ -1,0 +1,28 @@
+<style>
+    body * {
+        margin: 10px;
+        border: 1px solid blue;
+    }
+</style>
+
+<form onclick="alert('form')">FORM
+    <div onclick="alert('div')">DIV
+        <p onclick="alert('p')">P</p>
+    </div>
+</form>
+
+
+<!-- Capturing Examp: need to enable by adding addEventListener:-true -->
+
+<!-- <form>FORM
+    <div>DIV
+        <p>P</p>
+    </div>
+</form>
+
+<script>
+    for (let elem of document.querySelectorAll('*')) {
+        elem.addEventListener("click", e => alert(`Capturing: ${elem.tagName}`), true);
+        elem.addEventListener("click", e => alert(`Bubbling: ${elem.tagName}`));
+    }
+</script> -->
